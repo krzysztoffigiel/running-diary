@@ -1,29 +1,45 @@
-<header>         
-  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" [containerInside]="false">
-      <logo>
-          <a class="logo navbar-brand" href="#"><strong>#RD</strong></a>
-      </logo>
-      <links>
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item active waves-light" mdbRippleRadius>
-                  <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item waves-light" mdbRippleRadius>
-                  <a class="nav-link" routerLink="about">About</a>
-              </li>
-          </ul>
-      </links>
-  </mdb-navbar>
-  <div class="view hm-black-strong">
-    <div class="full-bg-img flex-center">
-        <div class="container">
-            <div class="white-text text-center wow fadeInUp">
-                <h2 class="main-header">Create Your own running diary</h2>
-                <button type="button" class="btn btn-blue-grey waves-light animated fadeIn" mdbRippleRadius> Join us now</button>
+<!-- Router Outlet -->
+
+<header>
+    <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark bg-indigo scrolling-navbar" [containerInside]="false">
+        <logo>
+            <a class="logo navbar-brand" href="#">
+                <strong>Navbar</strong>
+            </a>
+        </logo>
+        <links>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active waves-light" mdbRippleRadius>
+                    <a class="nav-link" routerLink="/">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item waves-light" mdbRippleRadius>
+                    <a class="nav-link" routerLink="/about">About</a>
+                </li>
+            </ul>
+        </links>
+    </mdb-navbar>
+    <div class="view hm-black-light">
+        <div class="full-bg-img flex-center">
+            <div class="container">
+                <div class="white-text text-center wow fadeInUp">
+                    <h2>This Navbar is fixed</h2>
+                    <h5>It will always stay visible on the top, even when you scroll down</h5>
+                    <br>
+                    <p>Full page intro with background image will be always displayed in full screen mode, regardless of device
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </header>
-
-<router-outlet></router-outlet>
+<main class="text-center py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</main>
