@@ -4,15 +4,11 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 import { AppComponent } from './app.component';
-import { HomeComponentComponent } from './home-component/home-component.component';
-import { AboutComponentComponent } from './about-component/about-component.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponentComponent,
-    AboutComponentComponent
   ],
   imports: [
     BrowserModule,
